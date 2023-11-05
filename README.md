@@ -23,7 +23,6 @@
 ### 필수 요건
 
 - [결과화면](https://next-netflix-17th-sepia.vercel.app/)의 랜딩 페이지와 메인 페이지를 구현합니다.
-  [랜딩페이지 영상](https://lottiefiles.com/kr/)
 - [Figma](https://www.figma.com/file/UqdXDovIczt1Gl0IjknHQf/Netflix?node-id=0%3A1)의 디자인을 그대로 구현합니다.
 - Open api를 사용해서 데이터 패칭을 진행합니다. (ex. [themoviedb API](https://developers.themoviedb.org/3/getting-started/introduction))
 - `yarn`, `yarn berry`, `npm`, `pnpm`등 패키지 매니저를 직접 선택해 Next.js를 세팅해 봅니다.
@@ -42,6 +41,7 @@
 
 ## 링크 및 참고자료
 
+- [랜딩페이지 영상](https://lottiefiles.com/kr/)
 - [Next.js Docs](https://beta.nextjs.org/docs)
 - [Next.js 13에서 변한 것들](https://velog.io/@hang_kem_0531/Next.js-13%EC%9D%B4-%EB%82%98%EC%99%80%EB%B2%84%EB%A0%B8%EB%8B%A4)
 - [Git 협업 가이드](https://velog.io/@jinuku/Git-%ED%98%91%EC%97%85-%EA%B0%80%EC%9D%B4%EB%93%9C)
