@@ -36,7 +36,7 @@ const GlobalStyles = createGlobalStyle`
         font-size: 14px; /* Default font size */
         
         /* Media query for tablet */
-        @media (min-width: 768px) and (max-width: 1023px) {
+        @media (min-width: 768px) and (max-width: 1024px) {
             font-size: 12px;
         }
 
