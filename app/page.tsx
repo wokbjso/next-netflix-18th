@@ -1,13 +1,7 @@
-"use client";
-
-import styled from "styled-components";
-
 export default function Home() {
-  return <Title>Landing Page</Title>;
+  return (
+    <div className="text-xl h-[3rem] w-[3rem] bg-background-main text-text-main font-system-heading1">
+      jhel
+    </div>
+  );
 }
-
-const Title = styled.div`
-  font-size: 3rem;
-  color: ${(props) => props.theme.colors.red};
-  ${(props) => props.theme.fontStyles.header}
-`;
