@@ -34,7 +34,6 @@ module.exports = {
           fontFamily: "SF-PRO, sans-serif",
           fontWeight: "500",
           fontSize: "0.82rem",
-          lineHeight: "3rem",
           letterSpacing: "-0.26px",
         },
         ".font-main": {

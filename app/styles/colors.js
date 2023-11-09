@@ -11,4 +11,10 @@ export const customColors = {
   menu: {
     main: "#FFF",
   },
+  footerIcon: {
+    main: "#8C8787",
+  },
+  footerBackground: {
+    main: "#121212",
+  },
 };
