@@ -5,17 +5,19 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 import Slider from "react-slick";
-import { getPopularMovieResponse } from "../../queries/dto/get-popular-movie";
 import { getMoviePoster } from "../../utils/get-movie-poster";
 
-interface SliderProps {
+interface CustomSliderProps<T> {
   text: string;
-  data: getPopularMovieResponse[];
+  data: (T & { id: number; poster_path: string })[];
   className?: string;
 }
 
-const MainSlider = ({ data }: Omit<SliderProps, "text" | "className">) => {
-  console.log(data);
+export default function CustomSlider<T>({
+  text,
+  data,
+  className,
+}: CustomSliderProps<T>) {
   const settings = {
     arrows: false,
     infinite: true,
@@ -47,17 +49,18 @@ const MainSlider = ({ data }: Omit<SliderProps, "text" | "className">) => {
       },
     ],
   };
-
   return (
-    <StyledSlider {...settings}>
-      {data.map((movie) => (
-        <img
-          key={movie.id}
-          className="h-[16.1rem]"
-          src={getMoviePoster(movie.poster_path)}
-        />
-      ))}
-      {/* <div className="h-[16.1rem] bg-red-500" />
+    <div className={twMerge("bg-background-main pl-[0.5rem]", className)}>
+      <div className="font-sub text-white mb-[1.4rem] pl-[1.1rem]">{text}</div>
+      <StyledSlider {...settings}>
+        {data.map((movie) => (
+          <img
+            key={movie.id}
+            className="h-[16.1rem]"
+            src={getMoviePoster(movie.poster_path)}
+          />
+        ))}
+        {/* <div className="h-[16.1rem] bg-red-500" />
       <div className="h-[16.1rem] bg-green-500" />
       <div className="h-[16.1rem] bg-red-500" />
       <div className="h-[16.1rem] bg-green-500" />
@@ -65,16 +68,7 @@ const MainSlider = ({ data }: Omit<SliderProps, "text" | "className">) => {
       <div className="h-[16.1rem] bg-green-500" />
       <div className="h-[16.1rem] bg-red-500" />
       <div className="h-[16.1rem] bg-green-500" /> */}
-    </StyledSlider>
-  );
-};
-
-export default function CustomSlider({ text, data, className }: SliderProps) {
-  console.log(data);
-  return (
-    <div className={twMerge("bg-background-main pl-[0.5rem]", className)}>
-      <div className="font-sub text-white mb-[1.4rem] pl-[1.1rem]">{text}</div>
-      <MainSlider data={data} />
+      </StyledSlider>
     </div>
   );
 }
