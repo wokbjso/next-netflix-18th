@@ -6,6 +6,7 @@ export const MainImage = () => {
         alt="poster"
         className="relative w-[37.5rem] h-[41.5rem]"
       />
+      <div className="absolute top-0 w-[40rem] h-[47rem] z-[90] bg-gradient-to-t from-black via-transparent to-transparent"></div>
     </div>
   );
 };
