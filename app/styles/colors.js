@@ -8,4 +8,13 @@ export const customColors = {
   button: {
     main: "#C4C4C4",
   },
+  menu: {
+    main: "#FFF",
+  },
+  footerIcon: {
+    main: "#8C8787",
+  },
+  footerBackground: {
+    main: "#121212",
+  },
 };
