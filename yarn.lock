@@ -19,7 +19,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.23.2":
+"@babel/runtime@npm:^7.23.1, @babel/runtime@npm:^7.23.2":
   version: 7.23.2
   resolution: "@babel/runtime@npm:7.23.2"
   dependencies:
@@ -908,6 +908,7 @@ __metadata:
     slick-carousel: "npm:^1.8.1"
     styled-components: "npm:^6.1.0"
     styled-reset: "npm:^4.5.1"
+    tailwind-merge: "npm:^2.0.0"
     tailwindcss: "npm:^3"
     typescript: "npm:^5"
   languageName: unknown
@@ -3823,6 +3824,15 @@ __metadata:
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
   checksum: a9dc19ae2220c952bd2231d08ddeecb1b0328b61e72071ff4000c8384e145cc07c1c0bdb3b5a1cb06e186a7b2790f1dee793418b332f6ddf320de25d9125be7e
+  languageName: node
+  linkType: hard
+
+"tailwind-merge@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "tailwind-merge@npm:2.0.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.23.1"
+  checksum: d20d2551f4b2fd9eb68466accccf9b81baef0d8cfb9ecf89738a9abe72e023ec9fe9aad5b3b9da0a0b0ec340432069568b83dea9463ae670a20a9937fbb59bb0
   languageName: node
   linkType: hard
 
