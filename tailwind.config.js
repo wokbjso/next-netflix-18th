@@ -50,6 +50,20 @@ module.exports = {
           lineHeight: "1.5rem",
           letterSpacing: "-0.057px",
         },
+        ".searchBar-text": {
+          fontFamily: "SF-PRO, sans-serif",
+          fontWeight: "400",
+          fontSize: "1.3rem",
+          lineHeight: "2rem",
+          letterSpacing: "-0.041px",
+        },
+        ".playButton-text": {
+          fontFamily: "SF-PRO, sans-serif",
+          fontWeight: "600",
+          fontSize: "2.04rem",
+          lineHeight: "3rem",
+          letterSpacing: "-0.061px",
+        },
       });
     }),
   ],

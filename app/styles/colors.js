@@ -17,4 +17,7 @@ export const customColors = {
   footerBackground: {
     main: "#121212",
   },
+  hoverColor: {
+    main: "#A9A9A9",
+  },
 };
