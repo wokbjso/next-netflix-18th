@@ -4,7 +4,7 @@ import netflixlogo from "/public/netflix_logo.svg";
 
 export const Header = () => {
   return (
-    <div className="flex z-100 items-center justify-around pt-6 h-8rem w-37.5rem pr-6 header-text text-menu-main bg-transparent">
+    <div className="fixed inset-x-0 top-0 flex z-50 items-center justify-around pt-6 h-8rem w-37.5rem pr-6 header-text text-menu-main bg-transparent">
       <div className="h-14 w-14 relative">
         <Image src={netflixlogo} alt="logo" />
       </div>
