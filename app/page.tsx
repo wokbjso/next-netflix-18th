@@ -1,7 +1,9 @@
+import LandingNetflix from "./components/LandingNetflix";
+
 export default function Home() {
   return (
-    <div className="text-xl h-[3rem] w-[3rem] bg-background-main text-text-main font-system-heading1">
-      jhel
+    <div className="w-full h-full bg-background-main flex justify-center items-center">
+      <LandingNetflix />
     </div>
   );
 }
