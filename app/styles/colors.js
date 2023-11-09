@@ -8,4 +8,7 @@ export const customColors = {
   button: {
     main: "#C4C4C4",
   },
+  menu: {
+    main: "#FFF",
+  },
 };
