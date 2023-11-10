@@ -1,6 +1,10 @@
 import CustomSlider from "./components/Slider/CustomSlider";
 import getMovies from "./queries/getMovies";
 import { getPopularMovieResponse } from "./queries/dto/get-popular-movie";
+import MainImage from "../common/components/MainImage";
+import Header from "../common/components/Header";
+import Footer from "../common/components/Footer";
+import PlayBar from "../common/components/PlayBar";
 
 export default async function Main() {
   const sliderInfo = [
@@ -21,5 +25,12 @@ export default async function Main() {
       url: "https://api.themoviedb.org/3/movie/upcoming",
     },
   ];
-  return <div>hello</div>;
+  return (
+    <div className="bg-background-main">
+      <Header />
+      <MainImage />
+      <PlayBar />
+      <Footer />
+    </div>
+  );
 }

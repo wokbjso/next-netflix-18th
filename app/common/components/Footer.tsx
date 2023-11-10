@@ -7,7 +7,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 export const Footer = () => {
   return (
-    <div className="fixed inset-x-0 bottom-0 flex footer-text items-center justify-center w-37.5rem h-4.8rem pt-2 pb-2 bg-footerBackground-main text-footerIcon-main bg-background-main">
+    <div className="fixed inset-x-0 bottom-0 flex footer-text items-center justify-center pt-2 pb-2 bg-footerBackground-main text-footerIcon-main bg-background-main">
       <div className="w-1/5 flex flex-col text-center cursor-pointer items-center h-full">
         <BiHomeAlt2 style={{ fontSize: "2.4rem" }} />
         <div className="mt-px">Home</div>
