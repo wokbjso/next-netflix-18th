@@ -30,6 +30,13 @@ export default async function Main() {
       <Header />
       <MainImage />
       <PlayBar />
+      {sliderInfo.map(async (slider) => (
+        <CustomSlider
+          text={slider.text}
+          data={await getMovies(slider.url)}
+          className="mt-[2.2rem]"
+        />
+      ))}
       <Footer />
     </div>
   );
